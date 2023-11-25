@@ -1,0 +1,30 @@
+$bg-thiker-color:#522700;
+$light-text-color:#FAF6EB;
+$light-desc-color:#e3842e;
+$bg-clickable-button:#a28674;
+$bg-unclickable-button:#756961;
+
+
+.thikerContainer {
+    background-color: $bg-thiker-color;
+    color: $light-text-color;
+    font-family: 'Cairo-SemiBold';
+}
+
+.thikerDescription {
+    color: $light-desc-color;
+}
+
+.button {
+    background-color: $bg-clickable-button;
+    color: $light-text-color;
+    padding: 10px;
+}
+
+h1 {
+    color: $bg-thiker-color;
+}
+
+.done{
+    background-color: $bg-unclickable-button;
+}
