@@ -12,7 +12,7 @@ const router = createBrowserRouter(
     <>
       <Route path="/" element={<Categories athkarData={adhkarData} />} />
       <Route
-        path="/:id"
+        path="/athkari/:id"
         element={<AthkarOfCategories athkarData={adhkarData} />}
       />
       <Route path="*" element={<div>Not found</div>} />
