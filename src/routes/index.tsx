@@ -1,4 +1,5 @@
 import {
+  Navigate,
   Route,
   createBrowserRouter,
   createRoutesFromElements,
@@ -15,7 +16,7 @@ const router = createBrowserRouter(
         path="/athkari/:id"
         element={<AthkarOfCategories athkarData={adhkarData} />}
       />
-      <Route path="*" element={<div>Not found</div>} />
+      <Route path="*" element={<Navigate to="/" />} />
     </>
   )
 );
