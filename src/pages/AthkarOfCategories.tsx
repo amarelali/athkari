@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import { IAthkar } from "../interfaces";
 import Thiker from "../components/ui/Thiker/Thiker";
 
@@ -7,8 +7,12 @@ interface IProps {
 }
 const AthkarOfCategories = ({ athkarData }: IProps) => {
   const {id ='0'} = useParams<{ id: string }>();
-  const parsedId = parseInt(id);
+
+  if(isNaN(parseInt(id))) return <Navigate to={'/athkari/0'} />
+
+  const parsedId =  parseInt(id);
   const {title,data} = athkarData[parsedId];
+
     return (
     <>
       <h1 className="text-[30px] mb-4">{title}</h1>
