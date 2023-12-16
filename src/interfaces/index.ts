@@ -7,6 +7,7 @@ export interface IthikerDetails {
 }
 
 export interface IAthkar {
-   [category: string]: IthikerDetails[]
+   title: string;
+   data: IthikerDetails[]
 }
 

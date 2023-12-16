@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 interface IProps {
   title: string;
-  href: string;
+  thikerId: number;
 }
-const CategoryTitle = ({ title, href }: IProps) => {
+const CategoryTitle = ({ title, thikerId }: IProps) => {
   return (
-    <Link to={href}>
+    <Link to={`/${thikerId}`}>
       <div className="thikerContainer w-full p-10 rounded-2xl flex justify-center items-center text-[23px] h-full">
         {title}
       </div>
